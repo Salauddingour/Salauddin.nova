@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salauddin | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+  <!--  Navigation -->
+  <nav class="nav-3d">
+    <a href="#home" class="nav-btn">Home</a>
+    <a href="#about" class="nav-btn">About</a>
+    <a href="#projects" class="nav-btn">Projects</a>
+    <a href="#contact" class="nav-btn">Contact</a>
+  </nav>
+
+  <!--  Hero Section -->
+  <section id="home" class="hero-section">
+    <img src="pic.jpg" alt="Salauddin" class="profile-pic">
+    <h1>Hi, I'm <span>Salauddin</span></h1>
+    <p class="typewriter">Creative Developer | AI Explorer | Designer</p>
+  </section>
+
+  <script src="script.js"></script>
+</body><!-- About Section -->
+<section id="about" class="about-section">
+  <h2>About Me</h2>
+  <div class="about-card">
+    <p>
+      I'm <strong>Salauddin</strong>, a passionate developer blending creativity and code to build smart, stylish, and meaningful tech. I love AI, web dev, and turning ideas into digital experiences.
+    </p>
+  </div>
+</section>
+
+<!--  Skills Section -->
+<section id="skills" class="skills-section">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <span class="skill-badge">HTML</span>
+    <span class="skill-badge">CSS</span>
+    <span class="skill-badge">JavaScript</span>
+    <span class="skill-badge">Python</span>
+    <span class="skill-badge">Git & GitHub</span>
+    <span class="skill-badge">Figma</span>
+    <span class="skill-badge">AI Tools</span>
+    <span class="skill-badge">Cloud Basics</span>
+  </div>
+</section>
+<!--  Projects Section -->
+<section id="projects" class="projects-section">
+  <h2>My Projects</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('python')">Python</button>
+    <button onclick="filterProjects('web')">Web</button>
+    <button onclick="filterProjects('js')">JavaScript</button>
+  </div>
+
+  <div class="projects-grid">
+    <div class="project-card python">
+      <h3>Snake Game</h3>
+      <p>Classic game built using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project-card web">
+      <h3>My Gallery</h3>
+      <p>Image upload & display website using HTML/CSS.</p>
+    </div>
+    <div class="project-card js">
+      <h3>AI Chat UI</h3>
+      <p>Frontend UI for chatbot using JS + animations.</p>
+    </div>
+    <div class="project-card python">
+      <h3>Music Recognizer</h3>
+      <p>Detects songs from audio input using Python libraries.</p>
+    </div>
+  </div>
+</section>
+<!-- 📞 Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Get in Touch</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/salauddin%E2%80%8E-%E2%80%8E-831304250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">🔗 LinkedIn</a>
+    <a href="mailto:goursalauddin@gmail.com">📧 Email</a>
+    <a href="tel:7505921913">📞 Call</a>
+  </div>
+</section>
+<!-- 🤖 Floating Chatbot -->
+<div class="chatbot-button" onclick="toggleChatbot()">💬</div>
+
+<div class="chatbot-popup" id="chatbot">
+  <div class="chat-header">
+    <strong>AI Assistant</strong>
+    <span onclick="toggleChatbot()" style="cursor:pointer;">❌</span>
+  </div>
+  <div class="chat-body" id="chat-body">
+    <div class="bot-msg">Hi! I'm your assistant. Ask me anything ✨</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type here..." />
+    <button onclick="sendMsg()">Send</button>
+  </div>
+</div>
+</html>
